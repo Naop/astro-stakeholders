@@ -1,0 +1,357 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Astro Stakeholders 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2018-02-10 20:25-0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-02-10 20:41-0600\n"
+"Language-Team: Astro Web <webmaster@astroweb.me>\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_MX\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+
+#: astro-stakeholders.php:44
+msgctxt "post type general name"
+msgid "Stakeholders"
+msgstr "Partes Interesadas"
+
+#: astro-stakeholders.php:45
+msgctxt "post type singular name"
+msgid "Stakeholder"
+msgstr "Parte Interesada"
+
+#: astro-stakeholders.php:46
+msgctxt "admin menu"
+msgid "Stakeholders"
+msgstr "Partes Interesadas"
+
+#: astro-stakeholders.php:47
+msgctxt "add new on admin bar"
+msgid "Stakeholder"
+msgstr "Parte Interesada"
+
+#: astro-stakeholders.php:48
+msgctxt "stakeholder"
+msgid "Add New"
+msgstr "Añadir Nuevo"
+
+#: astro-stakeholders.php:49
+msgid "Add New Stakeholder"
+msgstr "Añadir Nueva Parte Interesada"
+
+#: astro-stakeholders.php:50
+msgid "New Stakeholder"
+msgstr "Nueva Parte Interesada"
+
+#: astro-stakeholders.php:51
+msgid "Edit Stakeholder"
+msgstr "Editar Parte Interesada"
+
+#: astro-stakeholders.php:52
+msgid "View Stakeholder"
+msgstr "Ver Parte Interesada"
+
+#: astro-stakeholders.php:53
+msgid "All Stakeholders"
+msgstr "Todas las Partes Interesadas"
+
+#: astro-stakeholders.php:54
+msgid "Search Stakeholders"
+msgstr "Buscar Partes Interesadas"
+
+#: astro-stakeholders.php:55
+msgid "Parent Stakeholders:"
+msgstr "Partes Interesadas Padre:"
+
+#: astro-stakeholders.php:56
+msgid "No stakeholders found."
+msgstr "No se encontraron partes interesadas."
+
+#: astro-stakeholders.php:57
+msgid "No stakeholders found in Trash."
+msgstr "No se encontraron partes interesadas en la papelera."
+
+#: astro-stakeholders.php:62
+msgid "People, companies, organizations."
+msgstr "Personas, compañías, instituciones."
+
+#: astro-stakeholders.php:89
+msgctxt "taxonomy general name"
+msgid "Types"
+msgstr "Tipos"
+
+#: astro-stakeholders.php:90
+msgctxt "taxonomy singular name"
+msgid "Type"
+msgstr "Tipo"
+
+#: astro-stakeholders.php:91
+msgid "Search Types"
+msgstr "Buscar Tipos"
+
+#: astro-stakeholders.php:92
+msgid "All Types"
+msgstr "Todos los Tipos"
+
+#: astro-stakeholders.php:93
+msgid "Parent Type"
+msgstr "Tipo Padre"
+
+#: astro-stakeholders.php:94
+msgid "Parent Type:"
+msgstr "Tipo Padre:"
+
+#: astro-stakeholders.php:95
+msgid "Edit Type"
+msgstr "Editar Tipo"
+
+#: astro-stakeholders.php:96
+msgid "Update Type"
+msgstr "Actualizar Tipo"
+
+#: astro-stakeholders.php:97
+msgid "Add New Type"
+msgstr "Añadir Nuevo Tipo"
+
+#: astro-stakeholders.php:98
+msgid "New Type Name"
+msgstr "Nuevo Nombre de Tipo"
+
+#: astro-stakeholders.php:99
+msgid "Type"
+msgstr "Tipo"
+
+#: astro-stakeholders.php:116
+msgctxt "taxonomy general name"
+msgid "Relations"
+msgstr "Relaciones"
+
+#: astro-stakeholders.php:117
+msgctxt "taxonomy singular name"
+msgid "Relation"
+msgstr "Relación"
+
+#: astro-stakeholders.php:118
+msgid "Search Relations"
+msgstr "Buscar Relaciones"
+
+#: astro-stakeholders.php:119
+msgid "All Relations"
+msgstr "Todas las Relaciones"
+
+#: astro-stakeholders.php:120
+msgid "Parent Relation"
+msgstr "Relación Padre"
+
+#: astro-stakeholders.php:121
+msgid "Parent Relation:"
+msgstr "Relación Padre:"
+
+#: astro-stakeholders.php:122
+msgid "Edit Relation"
+msgstr "Editar Relación"
+
+#: astro-stakeholders.php:123
+msgid "Update Relation"
+msgstr "Actualizar Relación"
+
+#: astro-stakeholders.php:124
+msgid "Add New Relation"
+msgstr "Añadir Nueva Relación"
+
+#: astro-stakeholders.php:125
+msgid "New Relation Name"
+msgstr "Nuevo Nombre de Relación"
+
+#: astro-stakeholders.php:126
+msgid "Relation"
+msgstr "Relación"
+
+#: astro-stakeholders.php:199 inc/stakeholder-meta-boxes.php:53
+msgid "Contact Information"
+msgstr "Información de Contacto"
+
+#: astro-stakeholders.php:200
+msgid "Website:"
+msgstr "Sitio Web:"
+
+#: astro-stakeholders.php:201 inc/stakeholder-meta-boxes.php:210
+msgid "Social Networks"
+msgstr "Redes Sociales"
+
+#: astro-stakeholders.php:206
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: astro-stakeholders.php:207
+msgid "Facebook Followers:"
+msgstr "Seguidores en Facebook:"
+
+#: astro-stakeholders.php:213
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: astro-stakeholders.php:214
+msgid "Instagram Followers:"
+msgstr "Seguidores en Instagram:"
+
+#: astro-stakeholders.php:220
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: astro-stakeholders.php:221
+msgid "Twitter Followers:"
+msgstr "Seguidores en Twitter:"
+
+#: astro-stakeholders.php:227
+msgid "YouTube:"
+msgstr "YouTube:"
+
+#: astro-stakeholders.php:228
+msgid "YouTube Subscribers:"
+msgstr "Suscriptores en YouTube:"
+
+#: astro-stakeholders.php:231
+msgid "Score"
+msgstr "Calificación"
+
+#: astro-stakeholders.php:232
+msgid "Importance (Us):"
+msgstr "Importancia (Nosotros):"
+
+#: astro-stakeholders.php:233
+msgid "Importance (Them):"
+msgstr "Importancia (Ellos):"
+
+#: astro-stakeholders.php:234
+msgid "Presence:"
+msgstr "Presencia:"
+
+#: inc/stakeholder-meta-boxes.php:21
+msgid "Website"
+msgstr "Sitio Web"
+
+#: inc/stakeholder-meta-boxes.php:26
+msgid "Representative Name"
+msgstr "Nombre del Representante"
+
+#: inc/stakeholder-meta-boxes.php:31
+msgid "Representative Phone"
+msgstr "Teléfono del Representante"
+
+#: inc/stakeholder-meta-boxes.php:69
+msgid "The stakeholder's contact details."
+msgstr "Detalles de contacto de la parte interesada."
+
+#: inc/stakeholder-meta-boxes.php:153
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/stakeholder-meta-boxes.php:163
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/stakeholder-meta-boxes.php:173
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/stakeholder-meta-boxes.php:183
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/stakeholder-meta-boxes.php:226
+msgid "The stakeholder's presence in social media."
+msgstr "Presencia de la parte interesada en redes sociales."
+
+#: inc/stakeholder-meta-boxes.php:352
+msgid "Follow on Twitter"
+msgstr "Seguir en Twitter"
+
+#: inc/stakeholder-meta-boxes.php:357
+msgid "Subscribe on YouTube"
+msgstr "Suscribirse en YouTube"
+
+#: inc/stakeholder-meta-boxes.php:362
+msgid "Complete Evaluation"
+msgstr "Completar Evaluación"
+
+#: inc/stakeholder-meta-boxes.php:384
+msgid "To Do List"
+msgstr "Lista de Tareas"
+
+#: inc/stakeholder-meta-boxes.php:400
+msgid "Tasks to be completed regarding the stakeholder."
+msgstr "Tareas a completar en relación con la parte interesada."
+
+#: inc/stakeholder-meta-boxes.php:492
+msgid "Related Percentage"
+msgstr "Porcentaje Relacionado"
+
+#: inc/stakeholder-meta-boxes.php:493
+msgid "What percentage of their activities relates to us?"
+msgstr "¿Qué porcentaje de sus actividades se relaciona con nosotros?"
+
+#: inc/stakeholder-meta-boxes.php:498
+msgid "Third Party Presence"
+msgstr "Presencia de Terceros"
+
+#: inc/stakeholder-meta-boxes.php:499
+msgid "Check this if they DO NOT promote third parties in their communication."
+msgstr "Selecciona esta casilla si NO promocionan a terceros en su comunicación."
+
+#: inc/stakeholder-meta-boxes.php:504
+msgid "Existing Partnership"
+msgstr "Convenio Existente"
+
+#: inc/stakeholder-meta-boxes.php:505
+msgid "Check this if they have an exiting partnership with our competitiors."
+msgstr "Selecciona esta casilla si ya tienen un convenio con nuestra competencia."
+
+#: inc/stakeholder-meta-boxes.php:510
+msgid "News Content"
+msgstr "Contenido Noticioso"
+
+#: inc/stakeholder-meta-boxes.php:511
+msgid "Check this if they currently produce news content."
+msgstr "Selecciona esta casilla si ya producen contenido noticioso."
+
+#: inc/stakeholder-meta-boxes.php:516
+msgid "Related Importance"
+msgstr "Importancia Relacionada"
+
+#: inc/stakeholder-meta-boxes.php:517
+msgid "Check this if they give NO importance to content related to us."
+msgstr "Selecciona esta casilla si NO dan importancia al contenido relacionado con nosotros."
+
+#: inc/stakeholder-meta-boxes.php:522
+msgid "Other Criteria"
+msgstr "Otros Criterios"
+
+#: inc/stakeholder-meta-boxes.php:523
+msgid "Check this if you consider other detrimental criteria."
+msgstr "Selecciona esta casilla si consideras algún otro criterio perjudicial."
+
+#: inc/stakeholder-meta-boxes.php:528
+msgid "Other Criteria Description"
+msgstr "Descripción de Otros Criterios"
+
+#: inc/stakeholder-meta-boxes.php:529
+msgid "Specify the detrimental criteria."
+msgstr "Especifica el criterio perjudicial."
+
+#: inc/stakeholder-meta-boxes.php:575
+msgid "Evaluation"
+msgstr "Evaluación"
+
+#: inc/stakeholder-meta-boxes.php:591
+msgid "Criteria to follow for the stakeholder rankings."
+msgstr "Criterios a seguir para calificar a las partes interesadas."
