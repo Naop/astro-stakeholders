@@ -197,7 +197,7 @@ class Astro_Stakeholders_Plugin {
 			$output .= '<p class="stakeholder-types">' . $this->stakeholder_terms( 'stakeholder-type' ) . '</p>';
 			$output .= '<p class="stakeholder-relations">' . $this->stakeholder_terms( 'stakeholder-relation' ) . '</p>';
 			$output .= '<h2>' . __( 'Contact Information', 'astro-stakeholders' ) . '</h2>';
-			$output .= '<strong>' . __( 'Website:', 'astro-stakeholders' ) . '</strong> ' . $this->stakeholder_meta( 'contact_information_website' );
+			$output .= '<strong>' . __( 'Website:', 'astro-stakeholders' ) . '</strong> <a href="' . get_post_meta( get_the_ID(), 'contact_information_website', true ) . '" target="_blank">' . get_post_meta( get_the_ID(), 'contact_information_website', true ) . '</a>';
 			$output .= '<h2>' . __( 'Social Networks', 'astro-stakeholders' ) . '</h2>';
 			
 			// FACEBOOK
@@ -205,7 +205,7 @@ class Astro_Stakeholders_Plugin {
 			if ( $facebook_urls ) {
 				$urls = explode( ',', $facebook_urls );
 				foreach ( $urls as $url ) {
-					$output .= '<br><strong>' . __( 'Facebook:', 'astro-stakeholders' ) . '</strong> ' . $url;
+					$output .= '<br><strong>' . __( 'Facebook:', 'astro-stakeholders' ) . '</strong> <a href="' . $url . '" target="_blank">' . $url . '</a>';
 				}
 		    	$output .= '<br><strong>' . __( 'Facebook Followers:', 'astro-stakeholders' ) . '</strong> ' . $this->stakeholder_meta( 'social_networks_facebook-likes' );
 			}
@@ -215,7 +215,7 @@ class Astro_Stakeholders_Plugin {
 			if ( $instagram_urls ) {
 				$urls = explode( ',', $instagram_urls );
 				foreach ( $urls as $url ) {
-					$output .= '<br><strong>' . __( 'Instagram:', 'astro-stakeholders' ) . '</strong> ' . $url;
+					$output .= '<br><strong>' . __( 'Instagram:', 'astro-stakeholders' ) . '</strong> <a href="' . $url . '" target="_blank">' . $url . '</a>';
 				}
 				$output .= '<br><strong>' . __( 'Instagram Followers:', 'astro-stakeholders' ) . '</strong> ' . $this->stakeholder_meta( 'social_networks_instagram-followers' );
 			}
@@ -225,7 +225,7 @@ class Astro_Stakeholders_Plugin {
 			if ( $twitter_urls ) {
 				$urls = explode( ',', $twitter_urls );
 				foreach ( $urls as $url ) {
-					$output .= '<br><strong>' . __( 'Twitter:', 'astro-stakeholders' ) . '</strong> ' . $url;
+					$output .= '<br><strong>' . __( 'Twitter:', 'astro-stakeholders' ) . '</strong> <a href="' . $url . '" target="_blank">' . $url . '</a>';
 				}
 			    $output .= '<br><strong>' . __( 'Twitter Followers:', 'astro-stakeholders' ) . '</strong> ' . $this->stakeholder_meta( 'social_networks_twitter-followers' );
 			}
@@ -235,7 +235,7 @@ class Astro_Stakeholders_Plugin {
   			if ( $youtube_urls ) {
   				$urls = explode( ',', $youtube_urls );
 				foreach ( $urls as $url ) {
-					$output .= '<br><strong>' . __( 'YouTube:', 'astro-stakeholders' ) . '</strong> ' . $url;
+					$output .= '<br><strong>' . __( 'YouTube:', 'astro-stakeholders' ) . '</strong> <a href="' . $url . '" target="_blank">' . $url . '</a>';
 		 	 	}
 		 	 	$output .= '<br><strong>' . __( 'YouTube Subscribers:', 'astro-stakeholders' ) . '</strong> ' . $this->stakeholder_meta( 'social_networks_youtube-subscribers' );
 			}
