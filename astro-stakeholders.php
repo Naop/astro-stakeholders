@@ -197,7 +197,7 @@ class Astro_Stakeholders_Plugin {
 			$output .= '<p class="stakeholder-types">' . $this->stakeholder_terms( 'stakeholder-type' ) . '</p>';
 			$output .= '<p class="stakeholder-relations">' . $this->stakeholder_terms( 'stakeholder-relation' ) . '</p>';
 			$output .= '<h2>' . __( 'Contact Information', 'astro-stakeholders' ) . '</h2>';
-			$output .= '<strong>' . __( 'Website:', 'astro-stakeholders' ) . '</strong> <a href="' . $this->stakeholder_meta( 'contact_information_website' ) . '" target="_blank">' . $this->stakeholder_meta( 'contact_information_website' ) . '</a>';
+			$output .= '<strong>' . __( 'Website:', 'astro-stakeholders' ) . '</strong> <a href="' . get_post_meta( get_the_ID(), 'contact_information_website', true ) . '" target="_blank">' . get_post_meta( get_the_ID(), 'contact_information_website', true ) . '</a>';
 			$output .= '<h2>' . __( 'Social Networks', 'astro-stakeholders' ) . '</h2>';
 			
 			// FACEBOOK
