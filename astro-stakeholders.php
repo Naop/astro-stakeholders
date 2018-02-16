@@ -19,11 +19,12 @@ class Astro_Stakeholders_Plugin {
 	public function __construct() {
 		// Setup
     	add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'custom_load_font_awesome' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_plugin_scripts' ) );
 		add_filter( 'script_loader_tag', array( $this, 'add_defer_attribute' ), 10, 2 );
 
     	// "STAKEHOLDER" Post Type and Taxonomies
 		add_action( 'init', array( $this, 'stakeholder_post_type' ) );
+		add_action( 'init', array( $this, 'stakeholder_taxonomies' ), 0 );
 
 		// Change content output.
 		add_filter ( 'the_content', array( $this, 'stakeholder_content' ) );
@@ -40,7 +41,10 @@ class Astro_Stakeholders_Plugin {
 	/**
 	 * Enqueue Font Awesome
 	 */
-	function custom_load_font_awesome() {
+	function enqueue_plugin_scripts() {
+		// CHART.js
+		wp_enqueue_script( 'chart-js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js', array(), null );
+
 		// FONT AWESOME 5
 		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', array(), null );
 	}

@@ -5,6 +5,34 @@
  * @package Astro Stakeholders
  */
 
+/**
+ * Get a stakeholder's taxonomies.
+ *
+ * @param string  $taxonomy The slug for the desired taxnonomy.
+ * @param boolean $children Wether to include children terms or not.
+ *
+ * @return string 			The list of terms with their respective links.
+ */
+function stakeholder_terms( $taxonomy, $children = false ) {
+    $terms = get_the_terms( get_the_ID(), $taxonomy );	
+
+    $terms_string = '';
+
+    $term_items = array();
+
+	if ( $terms && ! is_wp_error( $terms ) ) {		 
+	    foreach ( $terms as $term ) {
+	    	if ( $children == true || $term->parent == 0 ) {
+		    	$term_link = get_term_link( $term );
+		    	$term_items[] = '<a class="' . esc_attr( $taxonomy ) . '-link" href="' . esc_url( $term_link ) . '">' . esc_html( $term->name ) . '</a>';
+	    	}
+	    }
+
+	    $terms_string = join( ' | ', $term_items );
+    }
+
+    return $terms_string;
+}
 
 /**
  * Display all URLs with a link.
@@ -213,7 +241,56 @@ function stakeholder_youtube_subscribers( $youtube_urls ) {
  *
  * @return string 		 The top number of subscribers, followers or likes.
  */
-function stakeholders_top_result( $meta ) {
+function stakeholders_top_result( $meta, $name = false ) {
+	$args = array(
+		'meta_key'		=> $meta,
+		'post_type'		=> 'stakeholder',
+		'posts_per_page' 	=> -1,
+	);
+
+	$results = array();
+	$stakeholders = array();
+
+	$query = new WP_Query( $args );
+
+	if ( $query->have_posts() ) {
+	    while ( $query->have_posts() ) {
+	        $query->the_post();
+	        $results[] = get_post_meta( get_the_ID(), $meta, true );
+	        if ( $name == true ) {
+	        	$stakeholders[] = '<a href="' . esc_url( get_permalink() ) . '" target="_blank">' . esc_html( get_the_title() ) . '</a>';
+	        }
+	    }
+	}
+	wp_reset_postdata();
+
+	$top_result = max($results);
+	$top_stakeholder = '';
+
+	if ( ! empty( $results ) ) {
+		if ( $name == true && ! empty( $stakeholders ) ) {
+			for ($i = 0; $i < count($results); $i++) {
+				if ( $results[$i] == $top_result ) {
+					$top_stakeholder = $stakeholders[$i];
+				}
+			}
+			return $top_stakeholder;
+		} else {
+			return $top_result;
+		}
+	} else {
+		return 0;
+	}
+}
+
+/**
+ * Get the total result of a specific social network in all of the stakeholders.
+ *
+ * @param  string  $meta A valid meta field.	 
+ *
+ * @return string 		 The total number of subscribers, followers or likes.
+ */
+function stakeholders_total_result( $meta ) {
 	$args = array(
 		'meta_key'		=> $meta,
 		'post_type'		=> 'stakeholder',
@@ -233,7 +310,7 @@ function stakeholders_top_result( $meta ) {
 	wp_reset_postdata();
 
 	if ( ! empty( $results ) ) {
-		return( max( $results ) );
+		return( array_sum( $results ) );
 	} else {
 		return 0;
 	}
