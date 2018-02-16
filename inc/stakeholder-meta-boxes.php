@@ -2,7 +2,7 @@
 /**
  * Custom Meta Boxes for the "STAKEHOLDER" Post Type.
  *
- * @package Traffic Properties
+ * @package Astro Stakeholders
  */
 
 /**

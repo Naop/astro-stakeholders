@@ -19,10 +19,11 @@ class Astro_Stakeholders_Plugin {
 	public function __construct() {
 		// Setup
     	add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'custom_load_font_awesome' ) );
+		add_filter( 'script_loader_tag', array( $this, 'add_defer_attribute' ), 10, 2 );
 
     	// "STAKEHOLDER" Post Type and Taxonomies
 		add_action( 'init', array( $this, 'stakeholder_post_type' ) );
-		add_action( 'init', array( $this, 'stakeholder_taxonomies' ), 0 );
 
 		// Change content output.
 		add_filter ( 'the_content', array( $this, 'stakeholder_content' ) );
@@ -35,6 +36,31 @@ class Astro_Stakeholders_Plugin {
     	$plugin_dir = basename( dirname(__FILE__) ) . '/languages/';
 		load_plugin_textdomain( 'astro-stakeholders', false, $plugin_dir );
 	}
+
+	/**
+	 * Enqueue Font Awesome
+	 */
+	function custom_load_font_awesome() {
+		// FONT AWESOME 5
+		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', array(), null );
+	}
+
+	/**
+	 * Filter the HTML script tag of `font-awesome` script to add `defer` attribute.
+	 *
+	 * @param string $tag    The <script> tag for the enqueued script.
+	 * @param string $handle The script's registered handle.
+	 *
+	 * @return   Filtered HTML script tag.
+	 */
+	function add_defer_attribute( $tag, $handle ) {
+	    if ( 'font-awesome' === $handle ) {
+	        $tag = str_replace( ' src', ' defer src', $tag );
+	    }
+
+	    return $tag;
+	}
+
 
 	/**
 	 * "STAKEHOLDER" Post Type.
@@ -193,7 +219,7 @@ class Astro_Stakeholders_Plugin {
 	function stakeholder_content( $content ) {
 		$output = $content;
 
-		if ( in_the_loop() && get_post_type( get_the_ID() ) == 'stakeholder' ) {
+		if ( is_single() && get_post_type( get_the_ID() ) == 'stakeholder' ) {
 			$output .= '<p class="stakeholder-types">' . $this->stakeholder_terms( 'stakeholder-type' ) . '</p>';
 			$output .= '<p class="stakeholder-relations">' . $this->stakeholder_terms( 'stakeholder-relation' ) . '</p>';
 			$output .= '<h2>' . __( 'Contact Information', 'astro-stakeholders' ) . '</h2>';
@@ -257,6 +283,7 @@ class Astro_Stakeholders_Plugin {
 // Initialize the plugin
 $astro_stakeholders_plugin = new Astro_Stakeholders_Plugin();
 
+
 /**
  * Facebook PHP SDK
  */
@@ -271,3 +298,8 @@ require_once dirname( __FILE__ ) . '/inc/plugin-functions.php';
  * Stakeholder Meta Boxes
  */
 require_once dirname( __FILE__ ) . '/inc/stakeholder-meta-boxes.php';
+
+/**
+ * Stakeholder Shortcode
+ */
+require_once dirname( __FILE__ ) . '/inc/stakeholder-shortcode.php';
