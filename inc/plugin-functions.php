@@ -5,6 +5,24 @@
  * @package Astro Stakeholders
  */
 
+
+/**
+ * Display all URLs with a link.
+ *
+ * @param  string  $urls List of valid URLs, comma separated.	 
+ * @return string 		 The number of likes or an error message.
+ */
+function stakeholder_link_urls( $urls ) {
+	$urls = explode( ',', $urls );
+	$output = '';
+
+	foreach( $urls as $url ) {
+		$output .= '<a href="' . esc_url( $url ) . '" rel="bookmark" target="_blank"><i class="fas fa-external-link-alt fa-lg"></i></a>';
+    }
+
+    return $output;
+}
+
 /**
  * Get a stakeholder's Facebook Likes.
  *
@@ -198,7 +216,8 @@ function stakeholder_youtube_subscribers( $youtube_urls ) {
 function stakeholders_top_result( $meta ) {
 	$args = array(
 		'meta_key'		=> $meta,
-		'post_type'		=> 'stakeholder'
+		'post_type'		=> 'stakeholder',
+		'posts_per_page' 	=> -1,
 	);
 
 	$results = array();
