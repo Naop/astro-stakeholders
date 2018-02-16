@@ -127,7 +127,7 @@ function astro_stakeholders_shortcode( $atts ) {
 		<tbody>
 			<tr>
 				<th><?php _e( 'Nombre', 'astro-stakeholders' ); ?></th>
-                <th><?php _e( 'Relation', 'astro-stakeholders' ); ?></th>;
+                <th><?php _e( 'Relation', 'astro-stakeholders' ); ?></th>
 				<th><i class="fas fa-home fa-lg"></i></th>
 				<th><i class="fab fa-facebook fa-lg"></i></th>
 				<th><i class="fab fa-instagram fa-lg"></i></th>
