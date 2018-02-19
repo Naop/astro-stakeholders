@@ -8,10 +8,26 @@
 add_shortcode('stakeholders', 'astro_stakeholders_shortcode');
 function astro_stakeholders_shortcode( $atts ) {
     $args = shortcode_atts(array(
-        'order' => '',
+        'order'     => '',
+        'relation'  => '',
     ), $atts, 'stakeholders' );
 
-    if ( $args['order'] == 'score' ) {
+    if ( $args['relation'] != '' ) {
+        $query_args = array(
+            'post_type'         => 'stakeholder',
+            'posts_per_page'    => -1,
+            'meta_key'          => 'evaluation_total-score',
+            'orderby'           => 'meta_value_num',
+            'order'             => 'DESC',
+            'tax_query'         => array(
+                array (
+                    'taxonomy'  => 'stakeholder-relation',
+                    'field'     => 'slug',
+                    'terms'     => $args['relation'],
+                ),
+            ),
+        );
+    } elseif ( $args['order'] == 'score' ) {
     	$query_args = array(
 	        'post_type' 		=> 'stakeholder',
 	        'posts_per_page' 	=> -1,
