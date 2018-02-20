@@ -4,235 +4,237 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Astro Stakeholders 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2018-02-10 20:25-0600\n"
+"POT-Creation-Date: 2018-02-18 22:03-0600\n"
+"PO-Revision-Date: 2018-02-18 22:05-0600\n"
+"Last-Translator: \n"
+"Language-Team: Astro Web <webmaster@astroweb.me>\n"
+"Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-02-10 20:41-0600\n"
-"Language-Team: Astro Web <webmaster@astroweb.me>\n"
 "X-Generator: Poedit 2.0.6\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-Basepath: ..\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: es_MX\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: js\n"
 
-#: astro-stakeholders.php:44
+#: astro-stakeholders.php:74
 msgctxt "post type general name"
 msgid "Stakeholders"
 msgstr "Partes Interesadas"
 
-#: astro-stakeholders.php:45
+#: astro-stakeholders.php:75
 msgctxt "post type singular name"
 msgid "Stakeholder"
 msgstr "Parte Interesada"
 
-#: astro-stakeholders.php:46
+#: astro-stakeholders.php:76
 msgctxt "admin menu"
 msgid "Stakeholders"
 msgstr "Partes Interesadas"
 
-#: astro-stakeholders.php:47
+#: astro-stakeholders.php:77
 msgctxt "add new on admin bar"
 msgid "Stakeholder"
 msgstr "Parte Interesada"
 
-#: astro-stakeholders.php:48
+#: astro-stakeholders.php:78
 msgctxt "stakeholder"
 msgid "Add New"
 msgstr "Añadir Nuevo"
 
-#: astro-stakeholders.php:49
+#: astro-stakeholders.php:79
 msgid "Add New Stakeholder"
 msgstr "Añadir Nueva Parte Interesada"
 
-#: astro-stakeholders.php:50
+#: astro-stakeholders.php:80
 msgid "New Stakeholder"
 msgstr "Nueva Parte Interesada"
 
-#: astro-stakeholders.php:51
+#: astro-stakeholders.php:81
 msgid "Edit Stakeholder"
 msgstr "Editar Parte Interesada"
 
-#: astro-stakeholders.php:52
+#: astro-stakeholders.php:82
 msgid "View Stakeholder"
 msgstr "Ver Parte Interesada"
 
-#: astro-stakeholders.php:53
+#: astro-stakeholders.php:83
 msgid "All Stakeholders"
 msgstr "Todas las Partes Interesadas"
 
-#: astro-stakeholders.php:54
+#: astro-stakeholders.php:84
 msgid "Search Stakeholders"
 msgstr "Buscar Partes Interesadas"
 
-#: astro-stakeholders.php:55
+#: astro-stakeholders.php:85
 msgid "Parent Stakeholders:"
 msgstr "Partes Interesadas Padre:"
 
-#: astro-stakeholders.php:56
+#: astro-stakeholders.php:86
 msgid "No stakeholders found."
 msgstr "No se encontraron partes interesadas."
 
-#: astro-stakeholders.php:57
+#: astro-stakeholders.php:87
 msgid "No stakeholders found in Trash."
 msgstr "No se encontraron partes interesadas en la papelera."
 
-#: astro-stakeholders.php:62
+#: astro-stakeholders.php:92
 msgid "People, companies, organizations."
 msgstr "Personas, compañías, instituciones."
 
-#: astro-stakeholders.php:89
+#: astro-stakeholders.php:119
 msgctxt "taxonomy general name"
 msgid "Types"
 msgstr "Tipos"
 
-#: astro-stakeholders.php:90
+#: astro-stakeholders.php:120
 msgctxt "taxonomy singular name"
 msgid "Type"
 msgstr "Tipo"
 
-#: astro-stakeholders.php:91
+#: astro-stakeholders.php:121
 msgid "Search Types"
 msgstr "Buscar Tipos"
 
-#: astro-stakeholders.php:92
+#: astro-stakeholders.php:122
 msgid "All Types"
 msgstr "Todos los Tipos"
 
-#: astro-stakeholders.php:93
+#: astro-stakeholders.php:123
 msgid "Parent Type"
 msgstr "Tipo Padre"
 
-#: astro-stakeholders.php:94
+#: astro-stakeholders.php:124
 msgid "Parent Type:"
 msgstr "Tipo Padre:"
 
-#: astro-stakeholders.php:95
+#: astro-stakeholders.php:125
 msgid "Edit Type"
 msgstr "Editar Tipo"
 
-#: astro-stakeholders.php:96
+#: astro-stakeholders.php:126
 msgid "Update Type"
 msgstr "Actualizar Tipo"
 
-#: astro-stakeholders.php:97
+#: astro-stakeholders.php:127
 msgid "Add New Type"
 msgstr "Añadir Nuevo Tipo"
 
-#: astro-stakeholders.php:98
+#: astro-stakeholders.php:128
 msgid "New Type Name"
 msgstr "Nuevo Nombre de Tipo"
 
-#: astro-stakeholders.php:99
+#: astro-stakeholders.php:129
 msgid "Type"
 msgstr "Tipo"
 
-#: astro-stakeholders.php:116
+#: astro-stakeholders.php:146
 msgctxt "taxonomy general name"
 msgid "Relations"
 msgstr "Relaciones"
 
-#: astro-stakeholders.php:117
+#: astro-stakeholders.php:147
 msgctxt "taxonomy singular name"
 msgid "Relation"
 msgstr "Relación"
 
-#: astro-stakeholders.php:118
+#: astro-stakeholders.php:148
 msgid "Search Relations"
 msgstr "Buscar Relaciones"
 
-#: astro-stakeholders.php:119
+#: astro-stakeholders.php:149
 msgid "All Relations"
 msgstr "Todas las Relaciones"
 
-#: astro-stakeholders.php:120
+#: astro-stakeholders.php:150
 msgid "Parent Relation"
 msgstr "Relación Padre"
 
-#: astro-stakeholders.php:121
+#: astro-stakeholders.php:151
 msgid "Parent Relation:"
 msgstr "Relación Padre:"
 
-#: astro-stakeholders.php:122
+#: astro-stakeholders.php:152
 msgid "Edit Relation"
 msgstr "Editar Relación"
 
-#: astro-stakeholders.php:123
+#: astro-stakeholders.php:153
 msgid "Update Relation"
 msgstr "Actualizar Relación"
 
-#: astro-stakeholders.php:124
+#: astro-stakeholders.php:154
 msgid "Add New Relation"
 msgstr "Añadir Nueva Relación"
 
-#: astro-stakeholders.php:125
+#: astro-stakeholders.php:155
 msgid "New Relation Name"
 msgstr "Nuevo Nombre de Relación"
 
-#: astro-stakeholders.php:126
+#: astro-stakeholders.php:156 inc/stakeholder-shortcode.php:146
 msgid "Relation"
 msgstr "Relación"
 
-#: astro-stakeholders.php:199 inc/stakeholder-meta-boxes.php:53
+#: astro-stakeholders.php:229 inc/stakeholder-meta-boxes.php:53
 msgid "Contact Information"
 msgstr "Información de Contacto"
 
-#: astro-stakeholders.php:200
+#: astro-stakeholders.php:230
 msgid "Website:"
 msgstr "Sitio Web:"
 
-#: astro-stakeholders.php:201 inc/stakeholder-meta-boxes.php:210
+#: astro-stakeholders.php:231 inc/stakeholder-meta-boxes.php:210
 msgid "Social Networks"
 msgstr "Redes Sociales"
 
-#: astro-stakeholders.php:206
+#: astro-stakeholders.php:238
 msgid "Facebook:"
 msgstr "Facebook:"
 
-#: astro-stakeholders.php:207
+#: astro-stakeholders.php:240
 msgid "Facebook Followers:"
 msgstr "Seguidores en Facebook:"
 
-#: astro-stakeholders.php:213
+#: astro-stakeholders.php:248
 msgid "Instagram:"
 msgstr "Instagram:"
 
-#: astro-stakeholders.php:214
+#: astro-stakeholders.php:250
 msgid "Instagram Followers:"
 msgstr "Seguidores en Instagram:"
 
-#: astro-stakeholders.php:220
+#: astro-stakeholders.php:258
 msgid "Twitter:"
 msgstr "Twitter:"
 
-#: astro-stakeholders.php:221
+#: astro-stakeholders.php:260
 msgid "Twitter Followers:"
 msgstr "Seguidores en Twitter:"
 
-#: astro-stakeholders.php:227
+#: astro-stakeholders.php:268
 msgid "YouTube:"
 msgstr "YouTube:"
 
-#: astro-stakeholders.php:228
+#: astro-stakeholders.php:270
 msgid "YouTube Subscribers:"
 msgstr "Suscriptores en YouTube:"
 
-#: astro-stakeholders.php:231
+#: astro-stakeholders.php:273
 msgid "Score"
 msgstr "Calificación"
 
-#: astro-stakeholders.php:232
+#: astro-stakeholders.php:274
 msgid "Importance (Us):"
 msgstr "Importancia (Nosotros):"
 
-#: astro-stakeholders.php:233
+#: astro-stakeholders.php:275
 msgid "Importance (Them):"
 msgstr "Importancia (Ellos):"
 
-#: astro-stakeholders.php:234
+#: astro-stakeholders.php:276
 msgid "Presence:"
 msgstr "Presencia:"
 
@@ -306,7 +308,8 @@ msgstr "Presencia de Terceros"
 
 #: inc/stakeholder-meta-boxes.php:499
 msgid "Check this if they DO NOT promote third parties in their communication."
-msgstr "Selecciona esta casilla si NO promocionan a terceros en su comunicación."
+msgstr ""
+"Selecciona esta casilla si NO promocionan a terceros en su comunicación."
 
 #: inc/stakeholder-meta-boxes.php:504
 msgid "Existing Partnership"
@@ -314,7 +317,8 @@ msgstr "Convenio Existente"
 
 #: inc/stakeholder-meta-boxes.php:505
 msgid "Check this if they have an exiting partnership with our competitiors."
-msgstr "Selecciona esta casilla si ya tienen un convenio con nuestra competencia."
+msgstr ""
+"Selecciona esta casilla si ya tienen un convenio con nuestra competencia."
 
 #: inc/stakeholder-meta-boxes.php:510
 msgid "News Content"
@@ -330,7 +334,9 @@ msgstr "Importancia Relacionada"
 
 #: inc/stakeholder-meta-boxes.php:517
 msgid "Check this if they give NO importance to content related to us."
-msgstr "Selecciona esta casilla si NO dan importancia al contenido relacionado con nosotros."
+msgstr ""
+"Selecciona esta casilla si NO dan importancia al contenido relacionado con "
+"nosotros."
 
 #: inc/stakeholder-meta-boxes.php:522
 msgid "Other Criteria"
@@ -355,3 +361,65 @@ msgstr "Evaluación"
 #: inc/stakeholder-meta-boxes.php:591
 msgid "Criteria to follow for the stakeholder rankings."
 msgstr "Criterios a seguir para calificar a las partes interesadas."
+
+#: inc/stakeholder-shortcode.php:63
+msgid "Top Facebook Likes:"
+msgstr "Top de “Likes” en Facebook:"
+
+#: inc/stakeholder-shortcode.php:66
+msgid "Top Instagram Followers:"
+msgstr "Top de Seguidores en Instagram:"
+
+#: inc/stakeholder-shortcode.php:69
+msgid "Top Twitter Followers:"
+msgstr "Top de Seguidores en Twitter:"
+
+#: inc/stakeholder-shortcode.php:72
+msgid "Top YouTube Subscribers:"
+msgstr "Top de Suscriptores en YouTube:"
+
+#: inc/stakeholder-shortcode.php:107
+msgid "Total Facebook Likes:"
+msgstr "Total de “Likes” en Facebook:"
+
+#: inc/stakeholder-shortcode.php:109
+msgid "Total Instagram Followers:"
+msgstr "Total de Seguidores en Instagram:"
+
+#: inc/stakeholder-shortcode.php:111
+msgid "Total Twitter Followers:"
+msgstr "Total de Seguidores en Twitter:"
+
+#: inc/stakeholder-shortcode.php:113
+msgid "Total YouTube Subscribers:"
+msgstr "Total de Suscriptores en YouTube:"
+
+#: inc/stakeholder-shortcode.php:145
+msgid "Nombre"
+msgstr ""
+
+#: inc/stakeholder-shortcode.php:153 inc/stakeholder-shortcode.php:157
+msgid "Importance"
+msgstr "Importancia"
+
+#: inc/stakeholder-shortcode.php:154
+msgid "(Us)"
+msgstr "(Nosotros)"
+
+#: inc/stakeholder-shortcode.php:158
+msgid "(Them)"
+msgstr "(Ellos)"
+
+#: inc/stakeholder-shortcode.php:160
+msgid "Presence"
+msgstr "Presencia"
+
+#: inc/stakeholder-shortcode.php:161
+msgid "Total"
+msgstr "Total"
+
+#: inc/stakeholder-shortcode.php:261
+#, fuzzy
+#| msgid "No stakeholders found."
+msgid "No stakeholders were found."
+msgstr "No se encontraron partes interesadas."
