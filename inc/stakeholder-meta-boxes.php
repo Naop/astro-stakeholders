@@ -714,11 +714,18 @@ class Stakeholder_Evaluation_Meta_Box {
 	 */
 	public function stakeholder_presence() {
 
+		$relations = get_the_terms( get_the_ID(), 'stakeholder-relation' );	
+		if ( $relations && ! is_wp_error( $relations ) ) {
+			$relation = $relations[0]->slug;
+		} else {
+			$relation = '';
+		}
+
 		$top_results = array(
-			stakeholders_top_result( 'social_networks_facebook-likes' ),
-			stakeholders_top_result( 'social_networks_twitter-followers' ),
-			stakeholders_top_result( 'social_networks_instagram-followers' ),
-			stakeholders_top_result( 'social_networks_youtube-subscribers' ),
+			stakeholders_top_result( 'social_networks_facebook-likes', false, $relation ),
+			stakeholders_top_result( 'social_networks_twitter-followers', false, $relation ),
+			stakeholders_top_result( 'social_networks_instagram-followers', false, $relation ),
+			stakeholders_top_result( 'social_networks_youtube-subscribers', false, $relation ),
 		);
 
 		$people = array(
