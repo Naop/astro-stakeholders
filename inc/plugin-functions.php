@@ -241,12 +241,27 @@ function stakeholder_youtube_subscribers( $youtube_urls ) {
  *
  * @return string 		 The top number of subscribers, followers or likes.
  */
-function stakeholders_top_result( $meta, $name = false ) {
-	$args = array(
-		'meta_key'		=> $meta,
-		'post_type'		=> 'stakeholder',
-		'posts_per_page' 	=> -1,
-	);
+function stakeholders_top_result( $meta, $name = false, $relation = '' ) {
+	if ( $relation != '' ) {
+		$args = array(
+			'meta_key'		=> $meta,
+			'post_type'		=> 'stakeholder',
+			'posts_per_page' 	=> -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'stakeholder-relation',
+					'field'    => 'slug',
+					'terms'    => $relation,
+				),
+			),
+		);
+	} else {
+		$args = array(
+			'meta_key'		=> $meta,
+			'post_type'		=> 'stakeholder',
+			'posts_per_page' 	=> -1,
+		);
+	}
 
 	$results = array();
 	$stakeholders = array();
